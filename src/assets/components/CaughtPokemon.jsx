@@ -1,6 +1,10 @@
-import React from "react";
+import PropTypes from "prop-types";
 
-export function CaughtPokemon() {
-  const date = new Date().toLocaleDateString("en-GB");
+CaughtPokemon.propTypes = {
+  date: PropTypes.instanceOf(Date).isRequired,
+};
+
+export function CaughtPokemon(props) {
+  const { date } = props;
   return <p>Caught 0 Pokemon on {date}</p>;
 }
