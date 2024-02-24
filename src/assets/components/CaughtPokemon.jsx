@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 CaughtPokemon.propTypes = {
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
 };
 
 export function CaughtPokemon(props) {
