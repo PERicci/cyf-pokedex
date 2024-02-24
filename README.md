@@ -1,8 +1,43 @@
-# React + Vite
+# Pedro's Pokedex
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pokedex project for the Vite.js and React.js course from CYF.
 
-Currently, two official plugins are available:
+## 💻 Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Vite.js
+- React.js
+- Node.js
+
+## 🚀 Getting Started
+
+To get a local copy up and running follow these simple steps.
+
+### Prerequisites
+
+You will need Node.js and npm installed on your machine.
+
+### Installing
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/PERicci/cyf-pokedex.git
+```
+
+2. Install dependencies
+
+```sh
+cd cyf-pokedex
+npm install
+```
+
+3. Start the app
+
+```sh
+npm start
+```
+
+## 📄 CYF - React Module - Pokedex Project
+
+This project is created by CYF for the purpose of learning React.js and Vite.js.
+You can access the course repo [here](https://github.com/CodeYourFuture/CYF-Workshops/tree/main/react-pokedex).
