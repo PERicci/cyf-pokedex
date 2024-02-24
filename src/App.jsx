@@ -4,11 +4,12 @@ import { BestPokemon } from "./assets/components/BestPokemon";
 import { CaughtPokemon } from "./assets/components/CaughtPokemon";
 
 function App() {
+  const appName = "Pedro's Pokedex";
   const abilities = ["Pressure", "Mega Evolution", "Mind Control"];
   const date = new Date().toLocaleDateString("en-GB");
   return (
     <>
-      <Logo appName="Pedro's Pokedex" />
+      <Logo appName={appName} />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
     </>
