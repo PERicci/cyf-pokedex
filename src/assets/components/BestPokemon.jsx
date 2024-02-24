@@ -6,7 +6,6 @@ BestPokemon.propTypes = {
 
 export function BestPokemon(props) {
   const { abilities } = props;
-  console.log(abilities);
   return (
     <>
       <p className="title-quote">Mewtwo is the best!</p>
