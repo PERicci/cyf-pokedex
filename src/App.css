@@ -30,5 +30,13 @@ ul {
 }
 
 button {
-  margin: 0.5rem auto;
+  margin: 1rem auto 0.5rem;
+}
+
+#pokemon-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
 }
