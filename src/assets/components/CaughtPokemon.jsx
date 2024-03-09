@@ -7,34 +7,17 @@ CaughtPokemon.propTypes = {
 
 export function CaughtPokemon(props) {
   const [caught, setCaught] = useState([]);
+  const [pokemonNameInput, setPokemonNameInput] = useState("");
 
   useEffect(() => {}, [caught]);
 
-  function chooseRandomPokemon() {
-    const pokemon = [
-      `Mewtwo`,
-      `Mew`,
-      `Pikachu`,
-      `Eevee`,
-      `Charizard`,
-      `Blastoise`,
-      `Alakazam`,
-      `Gengar`,
-      `Dragonair`,
-      `Dragonite`,
-      `Venusaur`,
-      `Squirtle`,
-      `Charmander`,
-      `Bulbasaur`,
-      `Pidgeotto`,
-      `Rattata`,
-    ];
-    const randomIndex = Math.floor(Math.random() * pokemon.length);
-    return pokemon[randomIndex];
+  function catchPokemon() {
+    setCaught((prev) => [...prev, pokemonNameInput]);
+    setPokemonNameInput("");
   }
 
-  function catchPokemon() {
-    setCaught((prev) => [...prev, chooseRandomPokemon()]);
+  function handleInputChange(event) {
+    setPokemonNameInput(event.target.value);
   }
 
   const { date } = props;
@@ -43,6 +26,11 @@ export function CaughtPokemon(props) {
       <p>
         Caught {caught.length} Pokemon on {date}
       </p>
+      <input
+        type="text"
+        value={pokemonNameInput}
+        onChange={handleInputChange}
+      />
       <button onClick={catchPokemon}>Catch more one!</button>
       <ul id="pokemon-list">
         {caught.map((pokemon, index) => (
