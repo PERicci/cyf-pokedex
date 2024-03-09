@@ -2,8 +2,8 @@ import "./App.css";
 import { Logo } from "./assets/components/Logo";
 import { BestPokemon } from "./assets/components/BestPokemon";
 import { CaughtPokemon } from "./assets/components/CaughtPokemon";
-import { PokemonMovesSelector } from "./PokemonMovesSelector";
-import { PokemonCity } from "./PokemonCity";
+import { PokemonMovesSelector } from "./assets/components/PokemonMovesSelector";
+import { PokemonCity } from "./assets/components/PokemonCity";
 
 function logWhenClicked() {
   console.log("Logo clicked!");
