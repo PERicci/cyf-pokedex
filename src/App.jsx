@@ -2,6 +2,8 @@ import "./App.css";
 import { Logo } from "./assets/components/Logo";
 import { BestPokemon } from "./assets/components/BestPokemon";
 import { CaughtPokemon } from "./assets/components/CaughtPokemon";
+import { PokemonMovesSelector } from "./PokemonMovesSelector";
+import { PokemonCity } from "./PokemonCity";
 
 function logWhenClicked() {
   console.log("Logo clicked!");
@@ -22,6 +24,8 @@ function App() {
       />
       <BestPokemon abilities={abilities} />
       <CaughtPokemon date={date} />
+      <PokemonMovesSelector />
+      <PokemonCity />
     </>
   );
 }
