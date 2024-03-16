@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 CaughtPokemon.propTypes = {
   date: PropTypes.string.isRequired,
@@ -8,8 +8,6 @@ CaughtPokemon.propTypes = {
 export function CaughtPokemon(props) {
   const [caught, setCaught] = useState([]);
   const [pokemonNameInput, setPokemonNameInput] = useState("");
-
-  useEffect(() => {}, [caught]);
 
   function catchPokemon() {
     setCaught((prev) => [...prev, pokemonNameInput]);
